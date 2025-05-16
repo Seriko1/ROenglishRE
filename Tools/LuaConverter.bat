@@ -9,12 +9,12 @@ echo 2. Use this .bat file and follow the steps.
 echo 3. Let the magic do it's thing and enjoy.
 echo =================================================================
 pause
-set /p sub="Please write the name of the sub-directory (leave it empty for none): "
+set /p sub=
 echo =================================================================
-set /p file="Please write the file name (eg.: itemInfo): "
+set /p file=itemInfo
 if not defined file exit
 echo =================================================================
-set /p ext="Please write the file's extension (eg.: .lua): "
+set /p ext=.lua
 if not defined ext exit
 if not defined sub (
 	if not exist %file%%ext% (
